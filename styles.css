@@ -436,7 +436,7 @@ footer {
     margin-top: 0;
     width: 100%;
     height: 100vh;
-    background: url(icon-img/desktop/Header-illustration-desktop.svg) no-repeat;
+    background: url(https://raw.githubusercontent.com/mwismann/mwismann.github.io/1a534050fc8cc448cc0a3fbed06de21b8758c193/icon-img/desktop/header-illustration-desktop.svg) no-repeat;
     background-size: 100%;
     justify-content: flex-start;
     gap: 2.5rem;
