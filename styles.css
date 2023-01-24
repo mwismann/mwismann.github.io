@@ -7,11 +7,15 @@
   font-family: 'Inter', sans-serif;
 
   --primary-t-blue: rgb(23, 43, 77);
-  --primary-t-green: rgb(54, 179, 126);
+  --primary-t-green: rgb(10, 99, 62);
   --secondary-t-green: rgb(58, 74, 66);
   --secondary-b-light: rgb(235, 240, 238);
   --secondary-b-dark: rgb(208, 217, 212);
   --active-btn: rgb(0, 133, 82);
+}
+
+body {
+  background-color: rgb(249, 249, 249);
 }
 
 header {
@@ -228,6 +232,7 @@ li {
 }
 
 .action-btn:active {
+  color: white;
   background-color: var(--active-btn);
 }
 
