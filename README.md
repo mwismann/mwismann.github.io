@@ -7,6 +7,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [Loom Walkthrough](#loom-walk)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -62,6 +63,12 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - https://mwismann.github.io/
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Loom Walkthrough <a name="loom-walk"></a>
+
+- https://www.loom.com/share/2fb47dae52184ce6abac625fbf1eab3a
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
