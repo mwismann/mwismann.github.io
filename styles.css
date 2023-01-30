@@ -79,8 +79,8 @@ nav > ul {
   font-weight: 600;
 }
 
-.nav-menu{
-  color: #3A4A42;
+.nav-menu {
+  color: var(--secondary-t-green);
 }
 
 #hamburger {
@@ -464,7 +464,6 @@ footer {
   .nav-menu {
     display: block;
     padding: 0.5rem 1rem;
-    color: rgb(25, 28, 28);
     font-weight: 600;
     animation: navBtn 3s ease-in-out;
     transition: 0.3s ease;
