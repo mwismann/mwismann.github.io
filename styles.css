@@ -18,6 +18,16 @@ body {
   background-color: rgb(249, 249, 249);
 }
 
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 header {
   position: fixed;
   top: 0;
@@ -26,6 +36,7 @@ header {
   margin: 0 auto;
   padding: 0 1rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.9);
@@ -45,6 +56,7 @@ a {
 }
 
 .logo-container a {
+  display: block;
   text-decoration: none;
   color: rgb(40, 53, 47);
   font-size: 1.4rem;
@@ -52,12 +64,36 @@ a {
   font-weight: 600;
 }
 
+nav {
+  width: fit-content;
+  display: block;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+
 nav > ul {
   display: none;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.nav-menu {
+  color: var(--secondary-t-green);
 }
 
 #hamburger {
   padding: 0.65rem;
+  background-color: transparent;
+  border: none;
+}
+
+#close-mobile-menu {
+  margin-top: 1rem;
+  display: none;
+  width: 2rem;
+  align-self: flex-end;
   background-color: transparent;
   border: none;
 }
@@ -419,15 +455,16 @@ footer {
   nav > ul {
     height: 6rem;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 1.25rem;
+    font-size: 1rem;
   }
 
   .nav-menu {
     display: block;
     padding: 0.5rem 1rem;
-    color: rgb(25, 28, 28);
     font-weight: 600;
     animation: navBtn 3s ease-in-out;
     transition: 0.3s ease;
