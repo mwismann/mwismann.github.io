@@ -5,6 +5,7 @@ const navMenu = document.querySelector('nav > ul');
 const closeMobileMenu = document.querySelector('#close-mobile-menu');
 const overlay = document.querySelector('#overlay');
 const header = document.querySelector('header');
+const navMenuList = document.querySelectorAll('.nav-menu');
 
 hamburger.addEventListener('click', function() {
     logoContainer.style.display = 'none';
@@ -23,7 +24,7 @@ hamburger.addEventListener('click', function() {
     header.style.alignItems = 'flex-start';
 })
 
-closeMobileMenu.addEventListener('click', function() {
+function closeMenu() {
     logoContainer.style.display = 'block';
     hamburger.style.display = 'block';
     nav.style.display = 'block';
@@ -37,4 +38,7 @@ closeMobileMenu.addEventListener('click', function() {
     header.style.flexDirection = 'row';
     header.style.justifyContent = 'space-between';
     header.style.alignItems = 'center';
-})
+}
+
+closeMobileMenu.addEventListener('click', closeMenu);
+navMenuList.forEach(element => element.addEventListener('click', closeMenu));
