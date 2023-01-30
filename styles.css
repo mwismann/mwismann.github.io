@@ -71,7 +71,15 @@ nav {
 }
 
 nav > ul {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.nav-menu{
+  color: #3A4A42;
 }
 
 #hamburger {
