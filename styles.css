@@ -75,7 +75,7 @@ nav > ul {
   display: none;
   flex-direction: column;
   gap: 1.5rem;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -84,7 +84,6 @@ nav > ul {
 }
 
 #hamburger {
-  display: block;
   padding: 0.65rem;
   background-color: transparent;
   border: none;
@@ -456,9 +455,11 @@ footer {
   nav > ul {
     height: 6rem;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 1.25rem;
+    font-size: 1rem;
   }
 
   .nav-menu {
