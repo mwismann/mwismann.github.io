@@ -3,8 +3,8 @@ const projects = [
     id: 1,
     name: 'Keeping track of hundreds of components',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    'mobile image': 'icon-img/snapshot-portfolio-project.svg',
-    'desktop image': 'icon-img/desktop/snapshot-portfolio-project-desk.svg',
+    'mobile image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/snapshot-portfolio-project.svg',
+    'desktop image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/desktop/snapshot-portfolio-project-desk.svg',
     technologies: ['codekit', 'GitHub', 'JavaScript', 'Bootstrap','Terminal', 'Codepen'],
     liveVersion: '#',
     source: '#'
@@ -13,8 +13,8 @@ const projects = [
     id: 2,
     name: 'Keeping track of hundreds of components',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    'mobile image': 'icon-img/snapshot-portfolio-project.svg',
-    'desktop image': 'icon-img/desktop/snapshot-portfolio-project-desk.svg',
+    'mobile image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/snapshot-portfolio-project.svg',
+    'desktop image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/desktop/snapshot-portfolio-project-desk.svg',
     technologies: ['codekit', 'GitHub', 'JavaScript', 'Bootstrap','Terminal', 'Codepen'],
     liveVersion: '#',
     source: '#'
@@ -23,8 +23,8 @@ const projects = [
     id: 3,
     name: 'Keeping track of hundreds of components',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    'mobile image': 'icon-img/snapshot-portfolio-project.svg',
-    'desktop image': 'icon-img/desktop/snapshot-portfolio-project-desk.svg',
+    'mobile image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/snapshot-portfolio-project.svg',
+    'desktop image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/desktop/snapshot-portfolio-project-desk.svg',
     technologies: ['codekit', 'GitHub', 'JavaScript', 'Bootstrap','Terminal', 'Codepen'],
     liveVersion: '#',
     source: '#'
@@ -33,8 +33,8 @@ const projects = [
     id: 4,
     name: 'Keeping track of hundreds of components',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    'mobile image': 'icon-img/snapshot-portfolio-project.svg',
-    'desktop image': 'icon-img/desktop/snapshot-portfolio-project-desk.svg',
+    'mobile image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/snapshot-portfolio-project.svg',
+    'desktop image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/desktop/snapshot-portfolio-project-desk.svg',
     technologies: ['codekit', 'GitHub', 'JavaScript', 'Bootstrap','Terminal', 'Codepen'],
     liveVersion: '#',
     source: '#'
@@ -43,8 +43,8 @@ const projects = [
     id: 5,
     name: 'Keeping track of hundreds of components',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    'mobile image': 'icon-img/snapshot-portfolio-project.svg',
-    'desktop image': 'icon-img/desktop/snapshot-portfolio-project-desk.svg',
+    'mobile image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/snapshot-portfolio-project.svg',
+    'desktop image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/desktop/snapshot-portfolio-project-desk.svg',
     technologies: ['codekit', 'GitHub', 'JavaScript', 'Bootstrap','Terminal', 'Codepen'],
     liveVersion: '#',
     source: '#'
@@ -53,8 +53,8 @@ const projects = [
     id: 6,
     name: 'Keeping track of hundreds of components',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    'mobile image': 'icon-img/snapshot-portfolio-project.svg',
-    'desktop image': 'icon-img/desktop/snapshot-portfolio-project-desk.svg',
+    'mobile image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/snapshot-portfolio-project.svg',
+    'desktop image': 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/desktop/snapshot-portfolio-project-desk.svg',
     technologies: ['codekit', 'GitHub', 'JavaScript', 'Bootstrap','Terminal', 'Codepen'],
     liveVersion: '#',
     source: '#'
@@ -105,7 +105,7 @@ const displayProject = (currentBtn) => {
       `<div class="displayed-project">
       <div class="project-snapshot-container">
       <img src="${window.innerWidth < 768 ? project['mobile image'] : project['desktop image']}" alt="Three Towers standing tall">
-      <img id="close-project-view" src="${window.innerWidth < 768 ? 'icon-img/project-close.svg' : 'icon-img/desktop/project-close-desk.svg'}" alt="An X to close the project view" onclick="closeProject()">
+      <img id="close-project-view" src="${window.innerWidth < 768 ? 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/project-close.svg' : 'https://raw.githubusercontent.com/mwismann/mwismann.github.io/d6dfbe842fd5e8f029bb39ea9d353585a9346d0f/icon-img/desktop/project-close-desk.svg'}" alt="An X to close the project view" onclick="closeProject()">
       </div>
       
       <h3 class="project-name">${project.name}</h3>
