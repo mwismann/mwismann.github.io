@@ -336,7 +336,7 @@ li {
   width: 100%;
 }
 
-.project-snapshot-container img {
+#snapshot-img {
   width: 100%;
 }
 
@@ -544,10 +544,10 @@ footer {
 /* DESKTOP VERSION */
 
 @media screen and (min-width: 768px) {
-
   #overlay {
     background-color: rgba(193, 199, 208, 0.98);
   }
+
   header {
     position: absolute;
     background-color: transparent;
@@ -673,21 +673,21 @@ footer {
     width: 57rem;
     height: 67rem;
     padding: 5rem 2rem;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 0.5rem;
   }
-  
+
   .project-snapshot-container {
     position: relative;
     width: 100%;
   }
-  
+
   #close-project-view {
     top: -3.5rem;
     right: 0;
     width: 2.5rem;
   }
-  
+
   .project-name {
     width: 36rem;
   }
@@ -695,18 +695,18 @@ footer {
   .work-categories.alt {
     margin: 0.5rem 0 1rem;
   }
-  
+
   .project-description {
     width: 100%;
   }
-  
+
   .project-action-btn {
     position: absolute;
     top: 45rem;
     right: 2rem;
     width: 34%;
   }
-  
+
   /* About Section */
   #about-section {
     margin-top: 6rem;
