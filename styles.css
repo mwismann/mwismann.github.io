@@ -316,9 +316,10 @@ li {
 .displayed-project {
   position: absolute;
   top: 1.25rem;
-  left: 1rem;
+  left: 50%;
   width: 21rem;
   height: 52rem;
+  margin-left: -10.5rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -669,9 +670,10 @@ footer {
   .displayed-project {
     position: absolute;
     top: 5%;
-    left: 25%;
+    left: 50%;
     width: 57rem;
     height: 67rem;
+    margin-left: -28.5rem;
     padding: 5rem 2rem;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 0.5rem;
