@@ -126,12 +126,6 @@ const displayProject = (currentBtn) => {
       <a href="${projects[displayIdOf].source}" class="action-btn source-btn">See Source <img src="icon-img/github-white.svg" alt="GitHub logo"></a>
       </div>
       </div>`);
-
-  // for (const project of projects) {
-  //   if (project.id === +currentBtn) {
-
-  //   }
-  // }
 };
 
 const closeProject = () => {
