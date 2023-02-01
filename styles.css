@@ -537,6 +537,30 @@ input,
   display: none;
 }
 
+.error {
+  background-color: rgb(255, 221, 221);
+  border: 2px solid rgb(215, 3, 3);
+}
+
+#contact-section span.error-msg {
+  margin-top: -1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(215, 3, 3);
+}
+
+#contact-section span.suggest-msg {
+  margin-top: -0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary-t-blue);
+}
+
+#contact-section span.suggest-msg > .correct-email {
+  display: inline;
+  color: var(--active-btn);
+}
+
 /* Footer */
 footer {
   display: none;
@@ -830,6 +854,23 @@ footer {
   #contact-section span,
   #contact-line-break {
     display: none;
+  }
+
+  #contact-section span.error-msg {
+    display: inline;
+    align-self: flex-start;
+    font-size: 1rem;
+  }
+  
+  #contact-section span.suggest-msg {
+    display: inline;
+    align-self: flex-start;
+    font-size: 1rem;
+  }
+
+  #contact-section span.suggest-msg > .correct-email {
+    display: inline;
+    align-self: flex-start;
   }
 
   /* Footer */
