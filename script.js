@@ -198,7 +198,7 @@ contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
     clientEmail.classList.add('error');
     contactForm.insertAdjacentHTML('beforeend',
-    `<span class="error-msg">Please enter only lowercase letters on the email input</span>
-    <span class="suggest-msg">Is <span class="correct-email">"${validationCheck}"</span> the correct address?</span>`)
-  };
+      `<span class="error-msg">Please enter only lowercase letters on the email input</span>
+    <span class="suggest-msg">Is <span class="correct-email">"${validationCheck}"</span> the correct address?</span>`);
+  }
 });
