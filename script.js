@@ -74,6 +74,10 @@ const navMenuList = document.querySelectorAll('.nav-menu');
 // Works-Section Variables
 const worksSection = document.getElementById('works-section');
 
+// Contact-Section Variables
+const contactForm = document.getElementById('contact-form');
+const clientEmail = document.getElementById('client-email');
+
 // Functions
 const renderWorksSection = () => {
   worksSection.insertAdjacentHTML('beforeend',
@@ -183,3 +187,18 @@ window.onload = renderWorksSection;
 hamburger.addEventListener('click', openMenu);
 closeMobileMenu.addEventListener('click', closeMenu);
 navMenuList.forEach((element) => element.addEventListener('click', closeMenu));
+contactForm.addEventListener('submit', (e) => {
+  const validationCheck = clientEmail.value.toLocaleLowerCase();
+  if (clientEmail.value === validationCheck) {
+    clientEmail.classList.remove('error');
+    contactForm.removeChild(document.querySelector('.error-msg'));
+    contactForm.removeChild(document.querySelector('.suggest-msg'));
+    contactForm.submit();
+  } else {
+    e.preventDefault();
+    clientEmail.classList.add('error');
+    contactForm.insertAdjacentHTML('beforeend',
+      `<span class="error-msg">Please enter only lowercase letters on the email input</span>
+    <span class="suggest-msg">Is <span class="correct-email">"${validationCheck}"</span> the correct address?</span>`);
+  }
+});
