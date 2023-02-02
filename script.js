@@ -202,7 +202,7 @@ const renderContactInfo = () => {
 const setLocalStorage = (event, data) => {
   userData[data] = event.target.value;
   localStorage.setItem('userData', JSON.stringify(userData));
-}
+};
 
 // eventListeners and Functions Calls
 window.onload = renderWorksSection;
@@ -210,9 +210,9 @@ window.onload = renderContactInfo;
 hamburger.addEventListener('click', openMenu);
 closeMobileMenu.addEventListener('click', closeMenu);
 navMenuList.forEach((element) => element.addEventListener('click', closeMenu));
-inputFields.forEach(field => field.addEventListener('keyup', (e) => {
+inputFields.forEach((field) => field.addEventListener('keyup', (e) => {
   setLocalStorage(e, field.name);
-}))
+}));
 contactForm.addEventListener('submit', (e) => {
   const validationCheck = clientEmail.value.toLocaleLowerCase();
   if (clientEmail.value === validationCheck) {
