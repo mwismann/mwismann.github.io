@@ -86,6 +86,7 @@ const contactForm = document.getElementById('contact-form');
 const clientName = document.getElementById('client-name');
 const clientEmail = document.getElementById('client-email');
 const clientMsg = document.getElementById('client-msg');
+const inputFields = document.querySelectorAll('.input-field');
 
 // Functions
 const renderWorksSection = () => {
@@ -198,24 +199,20 @@ const renderContactInfo = () => {
   clientMsg.value = storedUserData.message;
 };
 
+const setLocalStorage = (event, data) => {
+  userData[data] = event.target.value;
+  localStorage.setItem('userData', JSON.stringify(userData));
+};
+
 // eventListeners and Functions Calls
 window.onload = renderWorksSection;
 window.onload = renderContactInfo;
 hamburger.addEventListener('click', openMenu);
 closeMobileMenu.addEventListener('click', closeMenu);
 navMenuList.forEach((element) => element.addEventListener('click', closeMenu));
-clientName.addEventListener('keyup', (e) => {
-  userData.name = e.target.value;
-  localStorage.setItem('userData', JSON.stringify(userData));
-});
-clientEmail.addEventListener('keyup', (e) => {
-  userData.email = e.target.value;
-  localStorage.setItem('userData', JSON.stringify(userData));
-});
-clientMsg.addEventListener('keyup', (e) => {
-  userData.message = e.target.value;
-  localStorage.setItem('userData', JSON.stringify(userData));
-});
+inputFields.forEach((field) => field.addEventListener('keyup', (e) => {
+  setLocalStorage(e, field.name);
+}));
 contactForm.addEventListener('submit', (e) => {
   const validationCheck = clientEmail.value.toLocaleLowerCase();
   if (clientEmail.value === validationCheck) {
