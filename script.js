@@ -187,6 +187,10 @@ window.onload = renderWorksSection;
 hamburger.addEventListener('click', openMenu);
 closeMobileMenu.addEventListener('click', closeMenu);
 navMenuList.forEach((element) => element.addEventListener('click', closeMenu));
+clientMsg.addEventListener('keyup', (e) => {
+  userData.message = e.target.value
+  localStorage.setItem('userData', JSON.stringify(userData));
+})
 contactForm.addEventListener('submit', (e) => {
   const validationCheck = clientEmail.value.toLocaleLowerCase();
   if (clientEmail.value === validationCheck) {
