@@ -1,3 +1,4 @@
+// Objects Data
 const projects = [
   {
     id: 1,
@@ -61,6 +62,12 @@ const projects = [
   },
 ];
 
+const userData = {
+  name: '',
+  email: '',
+  message: '',
+};
+
 // Header - Nav Variables
 const hamburger = document.querySelector('#hamburger');
 const logoContainer = document.querySelector('.logo-container');
@@ -76,7 +83,9 @@ const worksSection = document.getElementById('works-section');
 
 // Contact-Section Variables
 const contactForm = document.getElementById('contact-form');
+const clientName = document.getElementById('client-name');
 const clientEmail = document.getElementById('client-email');
+const clientMsg = document.getElementById('client-msg');
 
 // Functions
 const renderWorksSection = () => {
@@ -182,15 +191,31 @@ const closeMenu = () => {
   header.classList.remove('active');
 };
 
+const renderContactInfo = () => {
+  const storedUserData = JSON.parse(localStorage.getItem('userData'));
+  clientName.value = storedUserData.name;
+  clientEmail.value = storedUserData.email;
+  clientMsg.value = storedUserData.message;
+};
+
 // eventListeners and Functions Calls
 window.onload = renderWorksSection;
+window.onload = renderContactInfo;
 hamburger.addEventListener('click', openMenu);
 closeMobileMenu.addEventListener('click', closeMenu);
 navMenuList.forEach((element) => element.addEventListener('click', closeMenu));
-clientMsg.addEventListener('keyup', (e) => {
-  userData.message = e.target.value
+clientName.addEventListener('keyup', (e) => {
+  userData.name = e.target.value;
   localStorage.setItem('userData', JSON.stringify(userData));
-})
+});
+clientEmail.addEventListener('keyup', (e) => {
+  userData.email = e.target.value;
+  localStorage.setItem('userData', JSON.stringify(userData));
+});
+clientMsg.addEventListener('keyup', (e) => {
+  userData.message = e.target.value;
+  localStorage.setItem('userData', JSON.stringify(userData));
+});
 contactForm.addEventListener('submit', (e) => {
   const validationCheck = clientEmail.value.toLocaleLowerCase();
   if (clientEmail.value === validationCheck) {
