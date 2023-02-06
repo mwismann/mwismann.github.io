@@ -89,6 +89,13 @@ const clientMsg = document.getElementById('client-msg');
 const inputFields = document.querySelectorAll('.input-field');
 
 // Functions
+const renderContactInfo = () => {
+  const storedUserData = JSON.parse(localStorage.getItem('userData'));
+  clientName.value = storedUserData.name;
+  clientEmail.value = storedUserData.email;
+  clientMsg.value = storedUserData.message;
+};
+
 const renderWorksSection = () => {
   worksSection.insertAdjacentHTML('beforeend',
     `<div class="container">
@@ -170,6 +177,8 @@ const renderWorksSection = () => {
   seeProjectBtn.forEach((btn) => btn.addEventListener('click', (e) => {
     displayProject(e.target.dataset.id);
   }));
+
+  renderContactInfo();
 };
 
 const openMenu = () => {
@@ -192,13 +201,6 @@ const closeMenu = () => {
   header.classList.remove('active');
 };
 
-const renderContactInfo = () => {
-  const storedUserData = JSON.parse(localStorage.getItem('userData'));
-  clientName.value = storedUserData.name;
-  clientEmail.value = storedUserData.email;
-  clientMsg.value = storedUserData.message;
-};
-
 const setLocalStorage = (event, data) => {
   userData[data] = event.target.value;
   localStorage.setItem('userData', JSON.stringify(userData));
@@ -206,7 +208,6 @@ const setLocalStorage = (event, data) => {
 
 // eventListeners and Functions Calls
 window.onload = renderWorksSection;
-window.onload = renderContactInfo;
 hamburger.addEventListener('click', openMenu);
 closeMobileMenu.addEventListener('click', closeMenu);
 navMenuList.forEach((element) => element.addEventListener('click', closeMenu));
