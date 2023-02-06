@@ -63,9 +63,9 @@ const projects = [
 ];
 
 const userData = {
-  name: JSON.parse(localStorage.getItem('userData')).name,
-  email: JSON.parse(localStorage.getItem('userData')).email,
-  message: JSON.parse(localStorage.getItem('userData')).message,
+  name: JSON.parse(localStorage.getItem('userData')).name ? JSON.parse(localStorage.getItem('userData')).name : '',
+  email: JSON.parse(localStorage.getItem('userData')).email ? JSON.parse(localStorage.getItem('userData')).email : '',
+  message: JSON.parse(localStorage.getItem('userData')).message ? JSON.parse(localStorage.getItem('userData')).message : '',
 };
 
 // Header - Nav Variables
